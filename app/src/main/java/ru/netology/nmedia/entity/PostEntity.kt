@@ -25,7 +25,7 @@ data class PostEntity(
     @Embedded
     var attachment: AttachmentEmbeddable?
 ) {
-    fun toDto() = Post(id, author, authorAvatar, content, published, likedByMe, sharedByMe,likes,shares,views,video,attachment?.toDto())
+    fun toDto() = Post(id, authorAvatar, author, content, published, likedByMe, sharedByMe, likes, shares, views, video, attachment?.toDto())
 
     companion object {
         fun fromDto(dto: Post, hidden: Boolean) =

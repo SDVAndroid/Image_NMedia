@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit
 import ru.netology.nmedia.dto.Media
 import okhttp3.MultipartBody
 
-private const val BASE_URL = "${BuildConfig.BASE_URL}api/slow/"
+private val BASE_URL = "${BuildConfig.BASE_URL}/api/slow/"
 private val client = OkHttpClient.Builder()
     .connectTimeout(30,TimeUnit.SECONDS)
     .run {
