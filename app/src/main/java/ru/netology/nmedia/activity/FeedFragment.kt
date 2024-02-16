@@ -51,7 +51,7 @@ class FeedFragment : Fragment() {
                 findNavController().navigate(
                     R.id.action_feedFragment_to_photoFragment,
                     Bundle().apply {
-                        textArg = "${BuildConfig.BASE_URL}media/${post.attachment!!.url}"
+                        textArg = "${BuildConfig.BASE_URL}/media/${post.attachment!!.url}"
 
                     })
             }
